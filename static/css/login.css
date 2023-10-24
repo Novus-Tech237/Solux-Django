@@ -1,0 +1,183 @@
+@import url(style.css);
+/* -----== User Login Styles ==----- */
+
+h5{
+    text-align: center;
+}
+.signup-login_form{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 75px;
+    
+}
+
+.wrapper{
+    position: relative;
+    max-width: 29rem;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1.3rem 2rem;
+    box-shadow: -3px -3px 9px #aaa9a9a2,
+    3px 3px 7px rgba(147, 149, 151, 0.671);
+    /* margin: 1rem 1rem 1rem 1rem; */
+    background-color: rgba(255,255,255,0.13);
+     backdrop-filter: blur(10px);
+}
+.redirection{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+   }
+.redirection span{
+    color: white;
+}
+form a:hover{
+    color: #e93f1a;
+    text-decoration: none;
+}
+
+
+.form header{
+    font-size: 30px;
+    text-align: center;
+    /* color: var(--white-color); */
+    font-weight: 600;
+    cursor: pointer;
+}
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search_input {
+    width: calc(100% - 40rem);
+    height: 3rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50px 0px 0px 50px;
+    color: #000;
+}
+
+.search_button {
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    width: 40px;
+    border-radius: 0px 50px 50px 0px;
+    border: none;
+}
+
+button i{
+    font-size: 20px;
+}
+.wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 40px;
+}
+
+form input{
+    height: 60px;
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(105, 105, 105, 0);
+    color: #FFF;
+    border-radius: 0.5rem;
+}
+.form.login input{
+    border: 1px solid #aaa;
+    color: #000;
+}
+.form.login input:focus{
+    box-shadow: 0 1px #ddd;
+}
+form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.checkbox input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    accent-color:#AAA;
+    /* background-color:var(--wrapper-color); */
+    margin-top: 1px;
+}
+form .checkbox label{
+    cursor: pointer;
+    margin-top: 1px;
+    color: #FFF;
+    transition: all 0.5s ease;
+    /* color: var(--white-color); */
+}
+form .checkbox label:hover{
+    color:#e93f1a;
+}
+form a{
+    /* color: var(--dark-text); */
+    text-decoration: none;
+    color:#FFF;
+}
+
+form input[type="submit"]{
+    padding: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.button_submit,
+.button_login,
+.button_login2{
+    color: white;
+    background-color: #e93f1a;
+    border: none;
+}
+
+.button_submit:hover{
+    background-color: transparent;
+    border: 1px solid #e93f1a;
+    color: #e93f1a;
+}
+
+.no_results {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.modal {
+    display: none;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    text-align: center;
+  }

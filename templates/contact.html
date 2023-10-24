@@ -1,0 +1,57 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%include 'title'%}
+    {%include 'stylesheet_imports.html'%}
+</head>
+<body class="sub_page">
+  <div class="hero_area">
+    {% include "navigation.html" %}
+  </div>
+    <div class="body_bg layout_padding">
+
+        <!-- contact section -->
+    
+        <section class="contact_section">
+          <div class="container">
+            <div class="heading_container">
+              <h2>
+                Let's Get In Touch!
+              </h2>
+            </div>
+          </div>
+          <div class="container contact_bg layout_padding2-top">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="contact_form ">
+                  <form action="https://formspree.io/f/moqzrnlk" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Name ">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" placeholder="Message" name="message" class="message_input">
+                    <button type="submit">
+                      Send
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-box">
+                  <img src="{% static 'images/contact-img.jpg' %}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- end contact section -->
+    
+      </div>
+      {%include 'footer'%}
+    
+</body>
+{%include 'javascripts.html'%}
+</html>

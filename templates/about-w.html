@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "stylesheet_imports.html" %}
+    {% include "title" %}
+</head>
+<body class="sub_page">
+        <section class="about_section layout_padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <div class="heading_container">
+                      <h2>
+                        About Us
+                      </h2>
+                    </div>
+                    <p>
+                      It is a long established fact that a having accurate solutions and materials needed for courses as 
+                      a student saves a lot of time. The point of studying alone is good but as they say "Working hard is good but smart is better"
+                      So we propose our services to the public at a considerable amount so as to ease student works 
+                    </p>
+                    <a href="{%url 'user_auth:login'%}">
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{%static 'images/about-img.png'%}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/Team.jpg'%}" alt="" style="
+                    width: 100%;
+                    height: 10%;">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box2">
+                    <p>
+                     Welcome to Solux, The innovative solution provider that helps student to achieve their goals and streamline their process 
+                     our team experts has a passion  for delivering customized solutions that cater to ther unique needs of each client per course 
+                     At Solux, we pride ourselves on our commitment to student Satisfaction
+                     We also work closely with our clients either online or onsite to understand their needs and provide personalized solutions that exceed their expectations.
+                     Our team brings a wealth of expertise and experience to every assignment, CA and project, and we are always looking for new innovative ways to help students succeed
+                    </p>
+                    <a href="contact.html">
+                      Contact us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><br><br>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box2">
+                    <p>
+                    <br>
+                      Are you tired of struggling with your assignments? Look no further than Solux! 
+                      Our innovative platform provides customized solutions to help you ace all your assignments with ease.
+                    </p>
+                    <a href="contact.html">
+                      Contact us
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="video-box" id="advert">
+                    <br>
+                    <iframe src="https://share.synthesia.io/embeds/videos/8733afe5-09c1-467e-b57e-195eb4dde71d?autoplay=1&loop=1" loading ="lazy" allow="encrypted-media; fullscreen;"
+                    scrolling="no"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+</body>
+</html>

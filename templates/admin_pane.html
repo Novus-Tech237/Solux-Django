@@ -1,0 +1,33 @@
+<section class=" slider_section position-relative">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="detail-box">
+                <h1>
+                      Welcome to <span>Solux Admin</span> <br>
+                      {{request.user.first_name}} {{request.user.last_name}} 
+                    </h1> 
+
+                    
+                    <div class="btn-box">
+                      <a href="{%url 'shop:logout'%}" class="btn-1">
+                        Logout
+                      </a>
+                    </div>
+                
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>

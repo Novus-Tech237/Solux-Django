@@ -1,0 +1,94 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%include "title"%}
+    {%include "stylesheet_imports.html"%}
+</head>
+<body class = "sub_page">
+  <div class="hero_area">
+    {% include "navigation.html" %}
+  </div>
+    <div class="body_bg layout_padding">
+
+        <!-- service section -->
+        <section class="service_section ">
+          <div class="container">
+            <div class="heading_container">
+              <h2>
+                At Your Service
+              </h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/s-1.png' %}" alt="">
+                  </div>
+                  <h4>
+                    Customer Satisfaction
+                  </h4>
+                  <p>
+                    Our Services are Optimal and Accurate so as to satisfy the maximum client of our site
+                    We are listening and available to all our customers 
+                    rest assure "Customer wishes is our priority"
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box align-items-end align-items-md-start text-right text-md-left">
+                  <div class="img-box">
+                    <img src="{% static 'images/s-2.png' %}" alt="">
+                  </div>
+                  <h4>
+                    Fast Turnaround
+                  </h4>
+                  <p>
+                    The Solutions provided from our website should be received and sent on time for less saturation in servers
+                    <br>also,<br>
+                    We propose ourselves to help you submit your assignments and CAs on time so as to save student time in studies
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/s-3.png' %}" alt="">
+                  </div>
+                  <h4>
+                    Up to Date
+                  </h4>
+                  <p>
+                    We Receive the solutions from the Institution on real-time and we constantly update our website
+                    so that we have recent ongoing assignments and CAs
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box align-items-end align-items-md-start text-right text-md-left">
+                  <div class="img-box">
+                    <img src="{% static 'images/s-4.png' %}" alt="">
+                  </div>
+                  <h4>
+                    Premium Content
+                  </h4>
+                  <p>
+                    The Design of the solutions are suited for all the students. It is made very professional and standard with all the information
+                    needed for the submission
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+  {%include 'footer'%}
+</body>
+{%include 'javascripts.html'%}
+</html>

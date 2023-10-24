@@ -1,0 +1,33 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%include 'title'%}
+    <link rel="stylesheet" href="{%static 'css/login.css'%}">
+</head>
+<body>
+    {%include 'login.html'%}
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h3>Invalid Credentials</h3>
+            <p>Please Verify your Username or Password again😔</p>
+            <button onclick="closeModal()">❌</button>
+        </div>
+    </div>
+</body>
+{% block JavaScript %}
+<script>
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        window.location.href = "{% url 'user_auth:login' %}"
+    }
+
+</script>
+{% endblock  %}
+</html>
