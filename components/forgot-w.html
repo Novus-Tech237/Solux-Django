@@ -1,0 +1,20 @@
+<div class="signup-login_form">
+    <section class="wrapper">
+      <div class="form signup"> 
+        <header style="color:#e93f1a">Forgot Password</header>
+       
+        <form action="" method="post">
+          {% csrf_token %}
+            <span style="color: white">Forgot Your Password? Don't worry it happens. Just Follow the instructions to reset your password</span>
+            <input type="email" name="email" placeholder="Enter a Valid Email Address" required />
+            <input class="button_submit" type="submit" value="Submit">
+            <div class="redirection">
+              <div class="redirection">
+                <span class="signup_red">Return to </span>
+                <a href="{%url 'user_auth:login'%}" class="signup-link">Signin Page</a>
+            </div>
+            </div>
+        </form>
+    </div>
+    </section>
+  </div>  

@@ -25,3 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function convertToHtmlFile() {
+    var textareaContent = document.getElementById('myTextarea').value;
+    var fileName = 'myFile.html'; // Specify the name for the HTML file
+
+    var blob = new Blob([textareaContent], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+
+    var downloadLink = document.createElement('a');
+    downloadLink.href = url;
+    downloadLink.download = fileName;
+    downloadLink.click();
+
+    URL.revokeObjectURL(url);
+}

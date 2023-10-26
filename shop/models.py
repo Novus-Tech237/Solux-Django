@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
+from django.contrib.auth.hashers import make_password
 
 # class Product(models.Model):
 #     prod_name = models.CharField(max_length=100)
@@ -24,4 +25,11 @@ class PDF(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     pdf_file = models.FileField(upload_to='pdfs/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
-# Create your models here.
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    username = models.CharField(max_length=100)
+    forget_password_token = models.CharField(max_length=100, null=True, blank=True)
+    def set_password(self, raw_password):
+        self.password = make_password(raw_password)
+    def __str__(self):
+        return self.user.username + 'Profile'

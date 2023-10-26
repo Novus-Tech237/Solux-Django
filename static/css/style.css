@@ -717,4 +717,61 @@ margin-bottom: 25px;
 
 /* end footer section*/
 
+/*Work Pane Section*/
+.admin_pane{
+  background-color: #585858;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 100%;
+}
+.user_data{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.user_data span{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--body-color);
+}
+.user_data input,
+.user_data select{
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: white;
+  color: #000;
+}
+.user_data textarea{
+  resize: none;
+  height: 20rem;
+  border-radius: 5px;
+  font-family: 'Times New Roman', sans-serif;
+}
+.submition{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user_data button{
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.user_data button:hover{
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color); 
+}
+
+@media  screen and (max-width: 768px){
+  
+}
+/*End Of Work Pane*/
+
 

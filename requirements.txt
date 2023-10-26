@@ -1,0 +1,11 @@
+Django==4.0
+django-active-link==0.1.8
+django-allauth==0.52.0
+django-browser-reload==1.6.0
+django-cleanup==7.0.0
+django-crispy-forms==1.14.0
+django-filter==22.1
+django-rest-auth==0.9.5
+django-tailwind==3.4.0
+djangorestframework==3.14.0
+xhtml2pdf==0.2.11

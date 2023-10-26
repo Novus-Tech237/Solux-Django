@@ -57,7 +57,8 @@ ROOT_URLCONF = 'Solux.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'components')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,6 +130,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/%2Flogin'
 LOGIN_REDIRECT_URL = '/about/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_HOST_USER = 'no.reply_gradhub@outlook.com'
+EMAIL_HOST_PASSWORD = 'Def@ult237'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = 'no.reply_gradhub@outlook.com'
 
 # Google Cloud Storage settings
 GOOGLE_CLOUD_SERVICE_KEY = '/path/to/service/key.json'
