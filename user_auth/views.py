@@ -26,6 +26,8 @@ class RegisterView(View):
         try:
             user = User.objects.create_user(username=username, first_name=firstname, last_name=lastname, email=email, password=password)
             user.save()
+            profile = Profile.objects.create(user=user, username=username)
+            profile.save()
             return redirect(self.success_url)
         except:
             return redirect(self.template_name)
