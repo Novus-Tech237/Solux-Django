@@ -27,7 +27,7 @@ class PDF(models.Model):
     uploaded_at = models.DateTimeField(auto_now_add=True)
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    username = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
     forget_password_token = models.CharField(max_length=100, null=True, blank=True)
     def set_password(self, raw_password):
         self.password = make_password(raw_password)

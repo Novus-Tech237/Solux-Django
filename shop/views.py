@@ -49,3 +49,5 @@ class TutoView(LoginRequiredMixin, View):
     template_name = 'tuto.html'
     def get(self, request):
         return render(request, self.template_name)
+
+
