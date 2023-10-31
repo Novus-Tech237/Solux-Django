@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ErrorsConfig(AppConfig):
+class TutosConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'errors'
+    name = 'tutos'

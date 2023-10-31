@@ -12,7 +12,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 class RegisterView(View):
     template_name = 'register.html'
-    success_url = reverse_lazy('errors:notify-register')
+    success_url = reverse_lazy('alert:notify-register')
     def get(self, request):
         return render(request, self.template_name)
 
@@ -53,8 +53,8 @@ class UserLogin(View):
  
 class ForgotPasswordView(View): 
     template_name = 'forgot_password.html'
-    error_url = reverse_lazy('errors:error-database')
-    notify_url = reverse_lazy('errors:notify-email')
+    error_url = reverse_lazy('alert:error-database')
+    notify_url = reverse_lazy('alert:notify-email')
     def get(self, request):
         return render(request, self.template_name)
     def post(self, request):
@@ -72,8 +72,8 @@ class ForgotPasswordView(View):
         return redirect(self.notify_url)
 class ResetPasswordView(View):
     template_name = 'password_reset.html'
-    error_url = reverse_lazy('errors:error-reset_password')
-    notify_url = reverse_lazy('errors:notify-reset_password')
+    error_url = reverse_lazy('alert:error-reset_password')
+    notify_url = reverse_lazy('alert:notify-reset_password')
     def get(self, request, token):
         context = {'token': token}
         return render(request, self.template_name, context)

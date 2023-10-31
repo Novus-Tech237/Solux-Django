@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from .views import *
 
-app_name = "errors"
+app_name = "alert"
 urlpatterns = [
     path("error-login/", ErrorLoginView.as_view(), name="error-login"),
     path("error-register/",ErrorRegisterView.as_view(), name="error-register"),

@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('shop.urls')),
     path('/', include('user_auth.urls')),
-    path('error/', include('errors.urls'))
+    path('alert/', include('alert.urls')),
+    path('tuto/', include('tutos.urls'))
 ]

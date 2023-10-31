@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user_auth',
     'shop',
-    'errors',
+    'alert',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,8 @@ ROOT_URLCONF = 'Solux.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+        'DIRS': [
+                os.path.join(BASE_DIR, 'templates'),
                  os.path.join(BASE_DIR, 'components')],
         'APP_DIRS': True,
         'OPTIONS': {

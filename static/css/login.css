@@ -1,4 +1,5 @@
 @import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 /* -----== User Login Styles ==----- */
 
 h5{
@@ -172,10 +173,11 @@ form input[type="submit"]{
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-color);
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: #555555;
     padding: 20px;
     border: 1px solid #888;
     max-width: 400px;
@@ -184,6 +186,13 @@ form input[type="submit"]{
   }
   .modal-content button{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 1px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-family: 'Raleway', sans-serif;
+    color: var(--white-color);
+  }
+  .modal-content button:hover{
+    background-color: #888;
   }
