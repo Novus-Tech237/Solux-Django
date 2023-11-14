@@ -42,7 +42,7 @@ class ContactView(View):
     def get(self, request):
         return render(request, self.template_name)
 class SolutionView(LoginRequiredMixin, View):
-    template_name = 'cover_page1.html'
+    template_name = 'cover_page2.html'
     def get(self, request):
         return render(request, self.template_name)
 class TutoView(LoginRequiredMixin, View):

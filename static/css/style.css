@@ -66,6 +66,13 @@ body {
   background-size: cover;
   /* padding-bottom: 1rem; */
 }
+.super_area {
+  height: 90vh;
+  background-image: url(https://drive.google.com/uc?id=1PSUn1nL7n33sufn8YbousAfHNrqIJOj-);
+  background-size: cover;
+  border-bottom: 1px solid #000000;
+  image-resolution: 200dpi;
+}
 
 .sub_page .hero_area {
   height: auto;
@@ -79,7 +86,11 @@ body {
 .header_section .nav_container {
   margin: 0 auto;
 }
-
+.button{
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 10px 30px;
   color: var(--white-color);

@@ -43,7 +43,9 @@
     .slider_section .detail-box {
         text-align: center;
     }
-
+     .btn-box{
+        text-align: center;
+    }
     .slider_section .carousel-indicators {
         display: none;
     }

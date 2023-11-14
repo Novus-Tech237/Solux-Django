@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('.search_input');
     const items = document.querySelectorAll('.box');
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemName = item.querySelector('h4').textContent.toLowerCase();
 
             if (itemName.includes(query)) {
-                item.style.display = 'block';
+                item.style.display = 'flex';
                 resultsFound = true;
             } else {
                 item.style.display = 'none';

@@ -14,35 +14,45 @@
           <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
             <ul class="navbar-nav  ">
               {%if request.user.is_staff == True%}
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="{%url 'shop:index'%}">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="{%url 'shop:sales'%}">Shop</span></a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="{%url 'shop:test'%}">Work Pane</a>
               </li>
+              {%elif request.user.is_authenticated == True%}
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'shop:index'%}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="{%url 'shop:sales'%}">Shop</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{%url 'tutos:index'%}">Tuto</a>
+                </li>
+                <li class="nav-item button">
+                 <a href="{%url 'shop:logout'%}" class="nav-link">Logout</a>
+                </li>
+
               {%else%}
               <li class="nav-item ">
                 <a class="nav-link" href="{%url 'shop:index'%}">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'shop:about'%}"> About </a>
+                <a class="nav-link" href="#about"> About </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'shop:service'%}"> Service </a>
+                <a class="nav-link" href="#service"> Service </a>
               </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="{%url 'shop:sales'%}">Shop</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="{%url 'tutos:index'%}">Tuto</a>
-                </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{%url 'shop:contact'%}">Contact us</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact us</a>
               </li>
-              
+              <li class="nav-item">
+                <a href="" class="nav-link">Get Started</a>
+              </li>
               {%endif%}
             </ul>
           </div>

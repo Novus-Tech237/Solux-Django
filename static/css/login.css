@@ -1,5 +1,14 @@
 @import url(style.css);
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+:root{
+ 
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition:all 400ms ease;
+
+} 
 /* -----== User Login Styles ==----- */
 
 h5{
@@ -156,7 +165,7 @@ form input[type="submit"]{
 
 .no_results {
     display: none;
-    text-align: center;
+    justify-content: center;
     font-size: 18px;
     font-weight: bold;
     margin-top: 20px;
@@ -196,3 +205,29 @@ form input[type="submit"]{
   .modal-content button:hover{
     background-color: #888;
   }
+  .option{
+    display: flex;
+    gap: 1.2rem;
+  }
+.card-img-top {
+    object-fit: cover;
+}
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.custom-img-size {
+    width: 350px;
+    height: 200;
+  }
+.card-size{
+    
+}
+

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'user_auth',
     'shop',
     'alert',
+    'tutos',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
                 os.path.join(BASE_DIR, 'templates'),
-                 os.path.join(BASE_DIR, 'components')],
+                os.path.join(BASE_DIR, 'components'),
+                os.path.join(BASE_DIR, 'course_templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
