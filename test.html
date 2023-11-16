@@ -1,46 +1,116 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    /* CSS for side navigation bar */
-    .sidenav {
-      height: 100%;
-      width: 200px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #f5f5f5;
-      overflow-x: hidden;
-      padding-top: 20px;
-    }
 
-    .sidenav a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 16px;
-      color: #333;
-      display: block;
-    }
+<section class="dashboard">
+  <i class="uil uil-bars sidebar-toggle"></i>
+  <!-- User-image-Manipulation -->
+<div class="dash-content">
+  {%include 'vscode-title.html'%}
+  <div class="activity">
+      <div class="title">
+          <i class="uil uil-clock-three"></i>
+          <span class="text">How to Setup VSCode</span>
+      </div>
+      <div class="content">
+          <span>
+              Visual Studio Code (VSCode) is a popular source code editor developed by Microsoft. It is known for its lightweight and customizable nature, making it a preferred choice for many developers across different programming languages and platforms. Here's an introduction to VSCode and a step-by-step guide on how to download it.
 
-    .sidenav a:hover {
-      background-color: #ddd;
-    }
-  </style>
-</head>
-<body>
-  <!-- Side navigation bar -->
-  <div class="sidenav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+Features of Visual Studio Code:
+
+Cross-Platform Support: VSCode is available for Windows, macOS, and Linux, allowing developers to use it on their preferred operating system.
+
+Extensions and Marketplace: VSCode offers a vast collection of extensions that enhance its functionality. These extensions provide support for various programming languages, frameworks, and tools. You can find and install extensions from the VSCode Marketplace.
+
+IntelliSense: VSCode provides intelligent code completion and suggestions, also known as IntelliSense, which can significantly speed up your coding process.
+
+Built-in Git Integration: VSCode has built-in Git integration, allowing you to manage version control directly within the editor. You can commit, push, and pull changes to and from Git repositories.
+
+Debugging: VSCode supports debugging for multiple programming languages. You can set breakpoints, inspect variables, and step through your code during runtime.
+
+Customization: VSCode offers extensive customization options. You can personalize the editor's appearance, install themes, customize keybindings, and configure various settings to suit your preferences.
+              <br><br>
+              To get started, you need to download the IDE from their <a href="https://code.visualstudio.com/download" target="_blank">Official Website</a>
+          </span>
+      </div>
   </div>
+</div>
+</section>
+<!-- 
+{%load static%}
 
-  <!-- Content area -->
-  <div style="margin-left: 200px; padding: 20px;">
-    <h1>Welcome to My Website</h1>
-    <p>This is the main content area of the page.</p>
-  </div>
-</body>
-</html>
+    <nav class="navigation">
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="{%static 'images/logo.png'%}" alt="">
+            </div>
+
+            <span class="logo_name">SOLUX</span>
+        </div>
+
+        <div class="menu-items">
+            <div class="menu">
+                <ul class="nav-links">
+                    <li>
+                        <a href="Dashboard_One.html">
+                            <i class="bx bx-home icon"></i>
+                            <span class="text link-name">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-bar-chart-alt-2 icon"></i>
+                            <span class="text link-name">Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-book icon"></i>
+                            <span class="text link-name">Class Work</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-credit-card icon"></i>
+                            <span class="text link-name">Fee Reciept</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-table icon"></i>
+                            <span class="text link-name">Time Table</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-bell icon"></i>
+                            <span class="text link-name">Notification</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+           <div class="bottom-content">
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <div class="ico">
+                        <i class="bx bx-log-out icon"></i>
+                    </div>
+                    <span class="text logout-link">Logout</span>
+                </a></li>
+                <li class="mode">
+                    <a href="">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                    <span class="text link-mode">Dark Mode</span>
+                    
+                    </a>
+                        
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+           </div>
+           
+        </div>
+    </nav>  -->

@@ -10,7 +10,8 @@ from botocore.exceptions import NoCredentialsError
 from django.conf import settings
 from django.core.mail import EmailMessage
 from .models import *
-
+from django.utils.translation import activate
+from .localization import *
 class AboutView(View):
     template_name = 'about.html'
     def get(self, request):
@@ -36,7 +37,12 @@ class LogoutView(LoginRequiredMixin, View):
 class SalesView(LoginRequiredMixin, View):
     template_name = 'sales.html'
     def get(self, request):
-        return render(request, self.template_name)
+        address = request.META
+        user_ip = address.get('REMOTE_ADDR')
+        user_location = get_country_from_ip(user_ip)
+        print(user_location)
+        context = {'user_location': user_location}
+        return render(request, self.template_name, context)
 class ContactView(View):
     template_name = 'contact.html'
     def get(self, request):

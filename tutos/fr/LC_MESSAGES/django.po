@@ -1,0 +1,4 @@
+# fr-CM/LC_MESSAGES/django.po
+
+msgid "2,500 XAF/mo"
+msgstr "2 500 XAF/mo"

@@ -1,0 +1,24 @@
+@import url(style.css);
+.container-error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.content{
+    max-width: 30rem;
+}
+.redirect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.redirect a{
+    margin-left: 5px;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.redirect span{
+    font-size: 20px;
+}

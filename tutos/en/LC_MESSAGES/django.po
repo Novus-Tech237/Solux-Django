@@ -1,0 +1,4 @@
+# en-US/LC_MESSAGES/django.po
+
+msgid "2,500 XAF/mo"
+msgstr "$48/mo"

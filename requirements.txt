@@ -9,3 +9,5 @@ django-rest-auth==0.9.5
 django-tailwind==3.4.0
 djangorestframework==3.14.0
 xhtml2pdf==0.2.11
+whitenoise==6.6.0
+geocoder==1.38.1

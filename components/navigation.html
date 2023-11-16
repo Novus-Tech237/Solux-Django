@@ -33,7 +33,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{%url 'tutos:index'%}">Tuto</a>
                 </li>
-                <li class="nav-item button">
+                <li class="nav-item">
                  <a href="{%url 'shop:logout'%}" class="nav-link">Logout</a>
                 </li>
 
@@ -51,7 +51,7 @@
                 <a class="nav-link" href="#contact">Contact us</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Get Started</a>
+                <a href="{%url 'user_auth:login'%}" class="nav-link">Get Started</a>
               </li>
               {%endif%}
             </ul>

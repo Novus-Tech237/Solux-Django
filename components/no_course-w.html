@@ -1,0 +1,21 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/error.css'%}">
+
+</head>
+<body>
+    <div class="container-error">
+        <img src="{%static 'images/404_one.png'%}" alt="">
+        <div class="content">
+            <h4>Hold On {{request.user.first_name}} We are still adding the courses</h4>
+        </div>
+        <div class="redirect">
+            <span>Back to Other</span>
+            <a href="{%url 'tutos:index'%}">Courses</a>
+        </div>
+    </div>
+</body>
+</html>
