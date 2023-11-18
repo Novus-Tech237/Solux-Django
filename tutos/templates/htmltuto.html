@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%include 'title'%}
+    {%include 'stylesheet_imports.html'%}
+
+</head>
+<body>
+    <div class="c-container">
+        <div class="hero_bar">
+            {%include 'html_header.html'%}
+        </div>
+        
+        <section class="content">
+        
+                {%include 'html_nav.html'%}
+                {% block content %}
+                {% endblock%}
+        </section>
+    </div>
+</body>
+</html>  

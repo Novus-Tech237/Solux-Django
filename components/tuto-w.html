@@ -45,12 +45,12 @@
                 <div class="col-xl-4">
                     <div class="box"  style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
                         <div class="card">
-                            <img src="https://drive.google.com/uc?export=view&id=1qvrJ2_BTZmI4c8A5RBm5UGtkRrV-sskN" class="card-img-top custom-img-size custom-img-size" >
+                            <img src="https://drive.google.com/uc?export=view&id=1qvrJ2_BTZmI4c8A5RBm5UGtkRrV-sskN" class="card-img-top  custom-img-size" >
                             <div class="card-body">
                               <h4 class="card-title text-center">HTML5 Course: Master The Fundamentals Of Web Development</h4>
                               <p class="card-text">If you're looking to build a strong foundation in web development or enhance your existing skills, HTML5 courses are an excellent choice. These courses cover everything from the basics of HTML syntax to more advanced topics like multimedia integration and responsive design.</p>
                               <div class="option">
-                            <a href="#" class="btn text-center">Audit Course</a>
+                            <a href="{%url 'tutos:html'%}" class="btn text-center">Audit Course</a>
                             <a href="#" class="btn text-center">Read More</a>
                           </div>
                             </div>
@@ -192,6 +192,21 @@
               </div>
         </div>
     </div>
+    <div class="col-xl-4">
+      <div class="box"  style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <div class="card">
+              <img src="{% static 'images/React-Native.png'%}" class="card-img-top  custom-img-size" >
+              <div class="card-body">
+                <h4 class="card-title text-center">React Native Courses: Build Cross Platform Applications</h4>
+                <p class="card-text">This course is designed to equip you with the skills and knowledge needed to develop high-quality mobile applications using the React Native framework. Whether you are a web developer looking to expand into mobile app development or an aspiring mobile app developer, this course will provide you with a solid foundation and practical experience in building cross-platform apps.</p>
+                <div class="option">
+              <a href="{%url 'tutos:html'%}" class="btn text-center">Audit Course</a>
+              <a href="#" class="btn text-center">Read More</a>
+            </div>
+              </div>
+            </div>
+      </div>
+  </div>
           </div>
         </div>
     </section>

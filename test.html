@@ -1,116 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/side_nav.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-<section class="dashboard">
-  <i class="uil uil-bars sidebar-toggle"></i>
-  <!-- User-image-Manipulation -->
-<div class="dash-content">
-  {%include 'vscode-title.html'%}
-  <div class="activity">
-      <div class="title">
-          <i class="uil uil-clock-three"></i>
-          <span class="text">How to Setup VSCode</span>
-      </div>
-      <div class="content">
-          <span>
-              Visual Studio Code (VSCode) is a popular source code editor developed by Microsoft. It is known for its lightweight and customizable nature, making it a preferred choice for many developers across different programming languages and platforms. Here's an introduction to VSCode and a step-by-step guide on how to download it.
-
-Features of Visual Studio Code:
-
-Cross-Platform Support: VSCode is available for Windows, macOS, and Linux, allowing developers to use it on their preferred operating system.
-
-Extensions and Marketplace: VSCode offers a vast collection of extensions that enhance its functionality. These extensions provide support for various programming languages, frameworks, and tools. You can find and install extensions from the VSCode Marketplace.
-
-IntelliSense: VSCode provides intelligent code completion and suggestions, also known as IntelliSense, which can significantly speed up your coding process.
-
-Built-in Git Integration: VSCode has built-in Git integration, allowing you to manage version control directly within the editor. You can commit, push, and pull changes to and from Git repositories.
-
-Debugging: VSCode supports debugging for multiple programming languages. You can set breakpoints, inspect variables, and step through your code during runtime.
-
-Customization: VSCode offers extensive customization options. You can personalize the editor's appearance, install themes, customize keybindings, and configure various settings to suit your preferences.
-              <br><br>
-              To get started, you need to download the IDE from their <a href="https://code.visualstudio.com/download" target="_blank">Official Website</a>
-          </span>
-      </div>
-  </div>
-</div>
-</section>
-<!-- 
-{%load static%}
-
-    <nav class="navigation">
-        <div class="logo-name">
-            <div class="logo-image">
-                <img src="{%static 'images/logo.png'%}" alt="">
+</head>
+<body>
+    <div class="c-container">
+        <div class="hero_bar">
+            <img src="html.jpg">
+            <div class="title">
+                <h1>HTML5 COURSE: MASTER THE FUNDAMENTALS OF WEB DEVELOPMENT</h1>
+                <a href="" class="btn btn-primary">Quit</a>
             </div>
-
-            <span class="logo_name">SOLUX</span>
         </div>
-
-        <div class="menu-items">
-            <div class="menu">
-                <ul class="nav-links">
-                    <li>
-                        <a href="Dashboard_One.html">
-                            <i class="bx bx-home icon"></i>
-                            <span class="text link-name">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bx bx-bar-chart-alt-2 icon"></i>
-                            <span class="text link-name">Courses</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bx bx-book icon"></i>
-                            <span class="text link-name">Class Work</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bx bx-credit-card icon"></i>
-                            <span class="text link-name">Fee Reciept</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bx bx-table icon"></i>
-                            <span class="text link-name">Time Table</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bx bx-bell icon"></i>
-                            <span class="text link-name">Notification</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-           <div class="bottom-content">
-            <ul class="logout-mode">
-                <li><a href="#">
-                    <div class="ico">
-                        <i class="bx bx-log-out icon"></i>
+        <section class="content">
+            <div class="sidebar">
+                <ul class="menu">
+                    <div class="part">
+                        <h3>Introduction To HTML</h3>
+                        <li><a href="#">What is html</a></li>
+                        <li><a href="#">Description of Html code on Browser</a></li>
+                        <li><a href="#">Introduction to html tags</a></li>
                     </div>
-                    <span class="text logout-link">Logout</span>
-                </a></li>
-                <li class="mode">
-                    <a href="">
-                        <div class="sun-moon">
-                            <i class='bx bx-moon icon moon'></i>
-                            <i class='bx bx-sun icon sun'></i>
-                        </div>
-                    <span class="text link-mode">Dark Mode</span>
-                    
-                    </a>
-                        
-                <div class="mode-toggle">
-                  <span class="switch"></span>
+                    <div class="part">
+                        <h3>Html Structure</h3>
+                        <li><a href="#">Html Head</a></li>
+                        <li><a href="#">Html Page Title</a></li>
+                        <li><a href="#">Html Charset</a></li>
+                        <li><a href="#">Html Page Description</a></li>
+                        <li><a href="#">Html Body</a></li>
+                        <li><a href="#">Html Semantics</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML Text Formating</h3>
+                        <li><a href="#">Html headings</a></li>
+                        <li><a href="#">Html Paragraphs</a></li>
+                        <li><a href="#">Html Bolds</a></li>
+                        <li><a href="#">Html Strongs</a></li>
+                        <li><a href="#">Html Attributes</a></li>
+                        <li><a href="#">Html Spans</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML Media</h3>
+                        <li><a href="#">Html Images</a></li>
+                        <li><a href="#">Html Media</a></li>
+                        <li><a href="#">Html Audio</a></li>
+                        <li><a href="#">Html Iframes</a></li>
+                        <li><a href="#">Html Youtube</a></li>
+                        <li><a href="#">Html Plug-ins</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML List and Tables</h3>
+                        <li><a href="#">Html List</a></li>
+                        <li><a href="#">Html Tables</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML Forms & Divs</h3>
+                        <li><a href="#">Html Forms</a></li>
+                        <li><a href="#">Form Attributes</a></li>
+                        <li><a href="#">Form Elements</a></li>
+                        <li><a href="#">Html Input Types</a></li>
+                        <li><a href="#">Html Input Attributes</a></li>
+                        <li><a href="#">Html Input Form Attributes</a></li>
+                        <li><a href="#">Html Divs</a></li>
+                        <li><a href="#">Html Classes</a></li>
+                        <li><a href="#">Html Id</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>Advance tags and Html Emmets for VSCode</h3>
+                        <li><a href="#">Other Html Tags</a></li>
+                        <li><a href="#">VSCode Emmets for Html</a></li>
+                        <li><a href="#">Quiz</a></li>
+                    </div>
+                </+ul>
+            </div>
+            <div class="course">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <h2>Introduction To HTML</h2>
                 </div>
-            </li>
-            </ul>
-           </div>
-           
-        </div>
-    </nav>  -->
+                <div class="class">
+                    <h4>What is HTML</h4>
+                    <p>Html Stands for <strong>Hypertext Markup language</strong> used to create a web page</p>
+                    <p>It consists of series of elements called <strong>tags</strong> which tells the browser how to display the content on the browser.</p>
+                    <p>The actual version of html we will be using will be <strong>HTML5</strong> and the code editor will be <strong>VsCode</strong> (If you haven't started checkout the <a href="#">VSCode Course</a>)</p>
+                </div>
+                <div class="class">
+                    <h4>Description of HTML code on Browser</h4>
+                    <p>Below is a sample code of a basic html page</p>
+                    <div class="solux-example">
+                        <h4>Example</h4>
+                        <div class="solux-code notranslate htmlHigh">
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    !Doctype
+                                    <span class="attibutecolor" style="color:red;">html</span>
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    html
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    head
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    title
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span>
+                            <span>Page Title</span>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    /title
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    /head
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    body
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="pagination">
+                                <span class="tagnamecolor" style="color:brown;">
+                                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                                        h1
+                                    <span class="tagcolor" style="color:mediumblue;">></span>
+                                </span>
+                                    My First Heading
+                                <span class="tagnamecolor" style="color:brown;">
+                                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                                        /h1
+                                    <span class="tagcolor" style="color:mediumblue;">></span>
+                                </span><br>
+                            </span>
+                            <span class="pagination">
+                                <span class="tagnamecolor" style="color:brown;">
+                                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                                        p
+                                    <span class="tagcolor" style="color:mediumblue;">></span>
+                                </span>
+                                    My First Paragraph
+                                <span class="tagnamecolor" style="color:brown;">
+                                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                                        /p
+                                    <span class="tagcolor" style="color:mediumblue;">></span>
+                                </span><br>
+                            </span>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    /body
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span><br>
+                            <span class="tagnamecolor" style="color:brown;">
+                                <span class="tagcolor" style="color:mediumblue;"><</span>
+                                    /html
+                                <span class="tagcolor" style="color:mediumblue;">></span>
+                            </span>
+                            <br>
+                        </div>
+                    </div>
+                    <p>The above code will then be run on a browser and this is what it will display</p>
+                    
+                            <img src="static/images/html_page.png" alt="">
+                        
+                    </div>
+                    <div class="class">
+                        <h4>Introduction to Basic HTML Tags</h4>
+                        <p>A <strong>tag</strong> is an element attribute that which tells the browser how will the content be displayed on a browser</p>
+                        <p>A tag is written in the form <strong>&lt;tagname&gt; ... &lt;/tagname&gt;</strong></p>
+                        <p>From the above code we have some various tags that were used in order to run the page on the browser we will see the use of those various tags as seen on the table below</p>
+                        <div class="solux-example">
+                            <div class="table-container notranslate">
+                                <table>
+                                    <tr>
+                                      <th class="text">Tag Attribute</th>
+                                      <th class="text">Function</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="text_lil"><span>&lt;!Doctype html&gt;</span></td>
+                                      <td class="text_lil">It helps the browser understand how to interpret and render the HTML code that follows</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text_lil"><span>&lt;html&gt;</span></td>
+                                      <td class="text_lil">It defines the starting point of an HTML document and provides a container for all other elements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil"><span>&lt;head&gt;</span></td>
+                                        <td class="text_lil">It contains the information that is found on the browser's tab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil"><span>&lt;title&gt;</span></td>
+                                        <td class="text_lil">This tag labels the name of the browser's tab</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil"><span>&lt;body&gt;</span></td>
+                                        <td class="text_lil">This is where all the content of the web page will appear</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil"><span>&lt;h1&gt;</span></td>
+                                        <td class="text_lil">This is a heading font </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil"><span>&lt;p&gt;</span></td>
+                                        <td class="text_lil">This is a paragraph tag</td>
+                                    </tr>
+                                  </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>

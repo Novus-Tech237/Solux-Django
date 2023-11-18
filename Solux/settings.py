@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ub-4^t-k99r&pw$e&ok9*3=1#@n2@jq-=_pm_$ijeyt$48n$_2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -62,8 +62,9 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
                 os.path.join(BASE_DIR, 'templates'),
+                os.path.join(BASE_DIR, 'tutos/templates'),
                 os.path.join(BASE_DIR, 'components'),
-                os.path.join(BASE_DIR, 'course_templates')],
+                os.path.join(BASE_DIR, 'courses/html_courses'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

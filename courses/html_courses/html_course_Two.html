@@ -1,0 +1,147 @@
+{%load static%}
+<div class="course">
+    <div class="title">
+        <i class="uil uil-tachometer-fast-alt"></i>
+        <h2>HTML Structure</h2>
+    </div>
+    <div class="class">
+        <h3 style="font-size: 23px; text-decoration: underline">What is HTML</h3>
+        <p>Html Stands for <strong>Hypertext Markup language</strong> used to create a web page</p>
+        <p>It consists of series of elements called <strong>tags</strong> which tells the browser how to display the content on the browser.</p>
+        <p>The actual version of html we will be using will be <strong>HTML5</strong> and the code editor will be <strong>VsCode</strong> (If you haven't started checkout the <a href="#">VSCode Course</a>)</p>
+    </div>
+    <div class="class">
+        <h3 style="font-size: 23px; text-decoration: underline">Description of HTML code on Browser</h3>
+        <p>Below is a sample code of a basic html page</p>
+        <div class="solux-example">
+            <h4>Example</h4>
+            <div class="solux-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        !Doctype
+                        <span class="attibutecolor" style="color:red;">html</span>
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        html
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        head
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        title
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span>
+                <span>Page Title</span>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        /title
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        /head
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        body
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="pagination">
+                    <span class="tagnamecolor" style="color:brown;">
+                        <span class="tagcolor" style="color:mediumblue;"><</span>
+                            h1
+                        <span class="tagcolor" style="color:mediumblue;">></span>
+                    </span>
+                        My First Heading
+                    <span class="tagnamecolor" style="color:brown;">
+                        <span class="tagcolor" style="color:mediumblue;"><</span>
+                            /h1
+                        <span class="tagcolor" style="color:mediumblue;">></span>
+                    </span><br>
+                </span>
+                <span class="pagination">
+                    <span class="tagnamecolor" style="color:brown;">
+                        <span class="tagcolor" style="color:mediumblue;"><</span>
+                            p
+                        <span class="tagcolor" style="color:mediumblue;">></span>
+                    </span>
+                        My First Paragraph
+                    <span class="tagnamecolor" style="color:brown;">
+                        <span class="tagcolor" style="color:mediumblue;"><</span>
+                            /p
+                        <span class="tagcolor" style="color:mediumblue;">></span>
+                    </span><br>
+                </span>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        /body
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span><br>
+                <span class="tagnamecolor" style="color:brown;">
+                    <span class="tagcolor" style="color:mediumblue;"><</span>
+                        /html
+                    <span class="tagcolor" style="color:mediumblue;">></span>
+                </span>
+                <br>
+            </div>
+        </div>
+        <p>The above code will then be run on a browser and this is what it will display</p>
+        
+                <img src="{%static 'images/html_page.png'%}" alt="">
+            
+        </div>
+        <div class="class">
+            <h3 style="font-size: 23px; text-decoration: underline">Introduction to Basic HTML Tags</h3>
+            <p>A <strong>tag</strong> is an element attribute that which tells the browser how will the content be displayed on a browser</p>
+            <p>A tag is written in the form <strong>&lt;tagname&gt; ... &lt;/tagname&gt;</strong></p>
+            <p>From the above code we have some various tags that were used in order to run the page on the browser we will see the use of those various tags as seen on the table below</p>
+            <div class="solux-example">
+                <div class="table-container notranslate">
+                    <table>
+                        <tr>
+                          <th class="text">Tag Attribute</th>
+                          <th class="text">Function</th>
+                        </tr>
+                        <tr>
+                          <td class="text_lil"><span>&lt;!Doctype html&gt;</span></td>
+                          <td class="text_lil">It helps the browser understand how to interpret and render the HTML code that follows</td>
+                        </tr>
+                        <tr>
+                          <td class="text_lil"><span>&lt;html&gt;</span></td>
+                          <td class="text_lil">It defines the starting point of an HTML document and provides a container for all other elements.</td>
+                        </tr>
+                        <tr>
+                            <td class="text_lil"><span>&lt;head&gt;</span></td>
+                            <td class="text_lil">It contains the information that is found on the browser's tab</td>
+                        </tr>
+                        <tr>
+                            <td class="text_lil"><span>&lt;title&gt;</span></td>
+                            <td class="text_lil">This tag labels the name of the browser's tab</td>
+                        </tr>
+                        <tr>
+                            <td class="text_lil"><span>&lt;body&gt;</span></td>
+                            <td class="text_lil">This is where all the content of the web page will appear</td>
+                        </tr>
+                        <tr>
+                            <td class="text_lil"><span>&lt;h1&gt;</span></td>
+                            <td class="text_lil">This is a heading font </td>
+                        </tr>
+                        <tr>
+                            <td class="text_lil"><span>&lt;p&gt;</span></td>
+                            <td class="text_lil">This is a paragraph tag</td>
+                        </tr>
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>

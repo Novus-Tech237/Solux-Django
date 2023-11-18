@@ -1,0 +1,112 @@
+@import url(style.css);
+.c-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4{
+    font-size: 1.2rem;
+  }
+  .hero_bar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hero_bar img{
+    width: 30rem;
+  }
+  .sidebar {
+    background-color: #eaeaea;
+    padding: 20px;
+    max-width: 25rem;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    height: calc(150vh - 50px);  /* Set the maximum height of the sidebar */
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 8px 0;
+  }
+  .content{
+    display: flex;
+  }
+  .course{
+    padding-left: 6rem;
+    padding-top: 4rem;
+  }
+  .course .title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .course .title i{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: purple;
+    border-radius: 6px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.course .class{
+    margin-top: 1rem;
+    max-width: 50rem;
+}
+
+.solux-example{
+    padding: 8px 20px;
+    margin: 24px 24px;
+    box-shadow: none !important;
+    background-color: #E7E9EB;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+}
+
+.table-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+.solux-code{
+    border-left: 4px solid purple;
+    width: auto;
+    color: black;
+    word-wrap: break-word;
+    background-color: white;
+    padding: 8px 12px;
+}
+.class img{
+    width: 100%;
+}
+.pagination{
+    margin-left: 2rem;
+}
