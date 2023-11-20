@@ -30,8 +30,12 @@ class HtmlIntroductionView(LoginRequiredMixin, View):
     template_name = "htmlIntroduction.html"
     def get(self, request):
         return render(request, self.template_name)
-class HtmlDescriptionView(LoginRequiredMixin, View):
+class HtmlStructureView(LoginRequiredMixin, View):
     template_name = "htmlDescription.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlTextFormatingView(LoginRequiredMixin, View):
+    template_name = "htmlTextFormating.html"
     def get(self, request):
         return render(request, self.template_name)
 class VSCodeTutoView(LoginRequiredMixin, View):

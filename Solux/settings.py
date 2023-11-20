@@ -62,7 +62,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
                 os.path.join(BASE_DIR, 'templates'),
-                os.path.join(BASE_DIR, 'tutos/templates'),
+                os.path.join(BASE_DIR, 'tutos/templates/Html_Courses'),
+                os.path.join(BASE_DIR, 'tutos/templates/VScode_Courses'),
                 os.path.join(BASE_DIR, 'components'),
                 os.path.join(BASE_DIR, 'courses/html_courses'),],
         'APP_DIRS': True,
