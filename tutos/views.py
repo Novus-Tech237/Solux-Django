@@ -7,6 +7,21 @@ class IndexView(LoginRequiredMixin, View):
     template_name = "tuto.html"
     def get(self, request):
         return render(request, self.template_name)
+# class MarkAsDoneView_HTML(View):
+#     def get(self, request, course_id):
+#         session = request.session
+#         course_chapter_count = {
+#             'html_courses': 7
+#         }
+#         progress_by_course = session.get('progress',{})
+#         progress = progress_by_course.get(course_id, 0)
+#         progress += 1
+#         chapter_count = course_chapter_count.get(course_id)
+#         progress_percentage = (progress / chapter_count) * 100
+#         progress_by_course[course_id] = progress
+#         session['progress'] = progress_by_course
+#         next_chapter = progress
+#         next_section = 
 class HtmlTutoView(LoginRequiredMixin, View):
     template_name = "htmltuto.html"
     def get(self, request):

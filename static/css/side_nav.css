@@ -107,6 +107,7 @@ th {
     word-wrap: break-word;
     background-color: white;
     padding: 8px 12px;
+    font-family: 'Consolas', 'Courier New', monospace;
 }
 .class img{
     width: 100%;

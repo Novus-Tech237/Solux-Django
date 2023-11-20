@@ -82,5 +82,29 @@
         <a href="" id="mark-as-done" class="btn btn-primary" style="margin-bottom:2rem;">Mark as Done</a>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Get the progress bar element
+  var progressBar = $('#myProgressBar');
+
+  // Get the "Mark as Done" button element
+  var markAsDoneButton = $('#mark-as-done');
+
+  // Add a click event listener to the "Mark as Done" button
+  markAsDoneButton.click(function(e) {
+    e.preventDefault();
+
+    // Increment the width of the progress bar
+    progressBar.css('width', '+=10%');
+
+    // Scroll to the "HTML Structure" section
+    $('html, body').animate({
+      scrollTop: $('#html-structure').offset().top
+    }, 500);
+  });
+});
+</script>
     
 </div>
