@@ -57,7 +57,6 @@
     position: relative;
     height: 35px;
     width: 35px;
-    background-color: purple;
     border-radius: 6px;
     color: #FFFFFF;
     display: flex;
@@ -125,7 +124,6 @@ th {
 
 .progress_bar {
   height: 100%;
-  background-color: purple;
   border-radius: 4px;
   width: 0;
   transition: width 0.5s ease;

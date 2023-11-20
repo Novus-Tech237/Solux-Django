@@ -13,4 +13,6 @@ urlpatterns = [
     path("notify-reset_password/", NotifyResetPasswordView.as_view(), name="notify-reset_password"),
     path("notify-email/",NotifyEmailView.as_view(), name="notify-email"),
     path("notify-register/", NotifyRegisterView.as_view(), name="notify-register"),
+    path("notify-no_course/", NotifyNoCoursesView.as_view(), name="notify-no_course"),
+    
 ]

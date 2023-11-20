@@ -22,10 +22,7 @@ class IndexView(LoginRequiredMixin, View):
 #         session['progress'] = progress_by_course
 #         next_chapter = progress
 #         next_section = 
-class HtmlTutoView(LoginRequiredMixin, View):
-    template_name = "htmltuto.html"
-    def get(self, request):
-        return render(request, self.template_name)
+
 class HtmlIntroductionView(LoginRequiredMixin, View):
     template_name = "htmlIntroduction.html"
     def get(self, request):

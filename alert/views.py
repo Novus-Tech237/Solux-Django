@@ -21,7 +21,10 @@ class ErrorResetPasswordView(View):
     template_name = 'error_reset-password.html'
     def get(self, request):
         return render(request, self.template_name)
-    
+class NotifyNoCoursesView(View):
+    template_name = 'notify_no-course.html'
+    def get(self, request):
+        return render(request, self.template_name) 
 class NotifyEmailView(View):
     template_name = 'notify_email.html'
     def get(self, request):

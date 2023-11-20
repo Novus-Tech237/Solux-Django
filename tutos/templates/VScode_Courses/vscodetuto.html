@@ -11,14 +11,13 @@
 <body>
     <div class="c-container">
         <div class="hero_bar">
-            {%include 'html_header.html'%}
+            {%include 'vscode_header.html'%}
         </div>
         
         <section class="content">
-        
-                {%include 'html_nav.html'%}
+            {%include 'vscode_nav.html'%}
                 {% block content %}
-                    {% include 'html_course_One.html'%}
+                    {%include 'vscode_course_One.html'%}
                 {% endblock%}
         </section>
     </div>

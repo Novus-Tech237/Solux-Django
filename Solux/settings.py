@@ -65,7 +65,8 @@ TEMPLATES = [
                 os.path.join(BASE_DIR, 'tutos/templates/Html_Courses'),
                 os.path.join(BASE_DIR, 'tutos/templates/VScode_Courses'),
                 os.path.join(BASE_DIR, 'components'),
-                os.path.join(BASE_DIR, 'courses/html_courses'),],
+                os.path.join(BASE_DIR, 'courses/html_courses'),
+                os.path.join(BASE_DIR, 'courses/vscode_courses')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
