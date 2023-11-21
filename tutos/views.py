@@ -35,8 +35,12 @@ class HtmlTextFormatingView(LoginRequiredMixin, View):
     template_name = "htmlTextFormating.html"
     def get(self, request):
         return render(request, self.template_name)
-class VSCodeTutoView(LoginRequiredMixin, View):
-    template_name = "vscodetuto.html"
+class VSCodeIntroductionView(LoginRequiredMixin, View):
+    template_name = "vscodeIntroduction.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class VSCodeExtensionView(LoginRequiredMixin, View):
+    template_name = "vscodeExtension.html"
     def get(self, request):
         return render(request, self.template_name)
 # Create your views here.

@@ -34,7 +34,8 @@
     padding: 0;
     margin: 0;
   }
-  .class ul{
+  .class ul,
+  .pagination ul{
     list-style: disc;
   }
   
