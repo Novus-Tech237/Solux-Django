@@ -24,9 +24,6 @@
                 <a class="nav-link" href="{%url 'shop:test'%}">Work Pane</a>
               </li>
               {%elif request.user.is_authenticated == True%}
-              <li class="nav-item">
-                <a class="nav-link" href="{%url 'shop:index'%}">Home <span class="sr-only">(current)</span></a>
-              </li>
               <li class="nav-item active">
                   <a class="nav-link" href="{%url 'shop:sales'%}">Shop</span></a>
                 </li>

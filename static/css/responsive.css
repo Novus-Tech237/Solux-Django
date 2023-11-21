@@ -100,6 +100,51 @@
     .content{
         text-align: center;
     }
+
+    .solux-example{
+        padding: 8px 20px;
+        margin: 12px 12px;
+    }
+    .solux-code{
+        padding: 4px 10px;
+    }
+    .course{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    .course h2{
+        font-size: 25px;
+        font-style: italic;
+
+    }
+    .sidebar{
+        display: none;
+    }
+    
+    .progress-bar-container {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        width: 50%;
+    }
+    
+    .icon{
+        display: inline-block;
+    }
+    .title{
+        text-align: center;
+    }
+    .hero_bar{
+        flex-direction: column;
+    }
+    .hero_bar img{
+        width: 10rem;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 576px) {}

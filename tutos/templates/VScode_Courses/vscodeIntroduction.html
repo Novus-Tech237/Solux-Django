@@ -1,27 +1,5 @@
-{%load static%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {%include 'title'%}
-    {%include 'stylesheet_imports.html'%}
-
-</head>
-<body>
-    <div class="c-container">
-        <div class="hero_bar">
-            {%include 'vscode_header.html'%}
-        </div>
-        
-        <section class="content">
-            {%include 'vscode_nav.html'%}
-                {% block content %}
-                    {%include 'vscode_course_One.html'%}
-                {% endblock%}
-        </section>
-    </div>
-    {%include 'footer'%}
-</body>
-{%include 'javascripts.html'%}
-</html>  
+{% extends "vscodetuto.html" %}
+{% block content %}
+    <!-- Your specific content for html_course_One -->
+    {%include 'vscode_course_One.html'%}
+{% endblock %}

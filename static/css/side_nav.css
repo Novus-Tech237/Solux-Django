@@ -34,15 +34,14 @@
     padding: 0;
     margin: 0;
   }
-  .class ul,
-  .pagination ul{
+  .class ul{
     list-style: disc;
   }
   
   li {
     padding: 8px 0;
   }
-  .content{
+  .course_content{
     display: flex;
   }
   .course{
@@ -69,6 +68,7 @@
     margin-top: 2rem;
     max-width: 50rem;
     margin-bottom: 4rem;
+    border-bottom: 1px solid #aaa;
 }
 
 .solux-example{
@@ -116,18 +116,50 @@ th {
     margin-left: 2rem;
 }
 .progress-bar-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   margin-top: 1rem;
   width: 80%;
   height: 5px;
   background-color: grey;
   border-radius: 10px;
 }
+.progress-bar span {
+  margin-right: 5rem;
+}
 
+.menu-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.icon {
+  font-size: 3rem;
+  margin-right: 10px; 
+}
+
+.progress-bar-container {
+  flex-grow: 1; /* Take up remaining space */
+  margin-bottom: 1rem;
+}
 .progress_bar {
   height: 100%;
   border-radius: 4px;
-  width: 0;
+  width: 10%;
   transition: width 0.5s ease;
+}
+.menu {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  height: 100%;
+  background-color: #f0f0f0;
+  transition: right 0.3s ease;
+}
+.menu.active {
+  right: 0;
 }
 .tagcolor{
   color: mediumblue;
