@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/side_nav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="c-container">
+        <div class="hero_bar">
+            <img src="html.jpg">
+            <div class="title">
+                <h1>HTML5 COURSE: MASTER THE FUNDAMENTALS OF WEB DEVELOPMENT</h1>
+                <a href="" class="btn btn-primary">Quit</a>
+                <!-- <div class="progress-bar-container">
+                    <div class="progress_bar" id="myProgressBar"></div>
+                  </div> -->
+                  <div class="menu-container">
+                    <div class="icon">
+                      <i class='bx bx-menu'></i>
+                    </div>
+                    <div class="progress-bar-container"> 
+                      <div class="progress_bar" id="myProgressBar" style="color: purple;"></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <section class="course_content">
+            <div class="sidebar">
+                <ul class="menu">
+                    <div class="part">
+                        <h3>Introduction To HTML</h3>
+                        <li><a href="#">What is html</a></li>
+                        <li><a href="#">Description of Html code on Browser</a></li>
+                        <li><a href="#">Introduction to html tags</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>Html Structure</h3>
+                        <li><a href="#">Html Head</a></li>
+                        <li><a href="#">Html Page Title</a></li>
+                        <li><a href="#">Html Style</a></li>
+                        <li><a href="#">Html Charset</a></li>
+                        <li><a href="">Html Attributes and Html Elements</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML Text Formating</h3>
+                        <li><a href="#">Html headings</a></li>
+                        <li><a href="#">Html Paragraphs</a></li>
+                        <li><a href="#">Html Bolds</a></li>
+                        <li><a href="#">Html Strongs</a></li>
+                        <li><a href="#">Html Attributes</a></li>
+                        <li><a href="#">Html Spans</a></li>
+                        <li><a href="#">Html CSS</a></li>                        
+                    </div>
+                    <div class="part">
+                        <h3>HTML Media</h3>
+                        <li><a href="#">Html Images</a></li>
+                        <li><a href="#">Html Media</a></li>
+                        <li><a href="#">Html Audio</a></li>
+                        <li><a href="#">Html Iframes</a></li>
+                        <li><a href="#">Html Youtube</a></li>
+                        <li><a href="#">Html Plug-ins</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML List and Tables</h3>
+                        <li><a href="#">Html List</a></li>
+                        <li><a href="#">Html Tables</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>HTML Forms & Divs</h3>
+                        <li><a href="#">Html Forms</a></li>
+                        <li><a href="#">Form Attributes</a></li>
+                        <li><a href="#">Form Elements</a></li>
+                        <li><a href="#">Html Input Types</a></li>
+                        <li><a href="#">Html Input Attributes</a></li>
+                        <li><a href="#">Html Input Form Attributes</a></li>
+                        <li><a href="#">Html Divs</a></li>
+                        <li><a href="#">Html Classes</a></li>
+                        <li><a href="#">Html Id</a></li>
+                    </div>
+                    <div class="part">
+                        <h3>Advance tags and Html Emmets for VSCode</h3>
+                        <li><a href="#">Other Html Tags</a></li>
+                        <li><a href="#">VSCode Emmets for Html</a></li>
+                        <li><a href="#">Quiz</a></li>
+                    </div>
+                </+ul>
+            </div>
+            <div class="course">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <h2>Introduction To HTML</h2>
+                </div>
+                <div class="class">
+                    <h3 style="font-size: 23px; text-decoration: underline">The HTML &lt;head&gt; Element</h3>
+                    <p>The HTML <span class="tagname tagname_bg">&lt;head&gt;</span> attribute is a container that can consist of elements such as: <span class="tagname tagname_bg">&lt;title&gt;</span> ,<span class="tagname tagname_bg">&lt;link&gt;</span> ,<span class="tagname tagname_bg" >&lt;style&gt;</span>, <span class="tagname tagname_bg" >&lt;meta&gt;</span> and <span class="tagname tagname_bg">&lt;base&gt;</span></p>
+                    <p>The head is displayed on the browser as a tab and the only HTML tag that can be seen is the <span class="tagname tagname_bg">&lt;title&gt;</span></p>
+                    <p>The other tags like: <strong>&lt;meta&gt;, &lt;meta&gt;, &lt;meta&gt; , ...etc</strong> are not seen on the browser</p>
+                    <p>HTML metadata (&lt;meta&gt;) is data about the HTML document and can not be displayed. It typically defines the document tite, the character set, styles and other data information</p>
+                </div>
+                <div class="class">
+                    <h3 style="font-size: 23px; text-decoration: underline">The HTML &lt;title&gt; Element</h3>
+                    <p>This HTML element defines the title of the document. The title must be text only, and as said it is shown on the tab of the web browser.</p>
+                    <p>The content of the page title is very important for the SEO (Search Engine Organization) ! and the page title is used by the search engine algorithms to decide the order when listing pages in search results</p>
+                    <p>Therefore, try to make the  <span class="tagname tagname_bg">&lt;title&gt;</span> content as accurate and meaningful as possible!</p>
+                    <p>A sample HTML document: </p>
+                    <div class="solux-example">
+                        <h4>Example</h4>
+                        <div class="solux-code">
+                            <span class="tagcolor">&lt;</span><span class="tagname">!DOCTYPE <span class="tagattribute">html</span></span><span class="tagcolor">&gt;</span><br>
+                            <span class="tagcolor">&lt;</span><span class="tagname">html</span><span class="tagcolor">&gt;</span><br>
+                            <span class="tagcolor">&lt;</span><span class="tagname">head</span><span class="tagcolor">&gt;</span><br>
+                            &nbsp;
+                            <span class="tagcolor">&lt;</span><span class="tagname">title</span><span class="tagcolor">&gt;</span>A Meaningful Page Title <span class="tagcolor">&lt;</span><span class="tagname">/title</span><span class="tagcolor">&gt;</span><br>
+                            <span class="tagcolor">&lt;</span><span class="tagname">/head</span><span class="tagcolor">&gt;</span><br>
+                            <span class="tagcolor">&lt;</span><span class="tagname">body</span><span class="tagcolor">&gt;</span><br>
+                            <div class="pagination">Page Content...</div>
+                            <span class="tagcolor">&lt;</span><span style="color: brown;">/body</span><span class="tagcolor">&gt;</span><br>
+                            <span class="tagcolor">&lt;</span><span style="color: brown;">/html</span><span class="tagcolor">&gt;</span>
+                    </div>
+                    </div>    
+                    </div>
+                    <div class="class">
+                        <h3 style="font-size: 23px; text-decoration: underline">The HTML &lt;style&gt; Element</h3>
+                        <p>This tag element is used to define the style information of the single HTML page</p>
+                        <div class="solux-example">
+                            <h4>Example</h4>
+                            <div class="solux-code">
+                              <span class="tagcolor">&lt;</span><span class="tagname">style<span class="tagcolor">&gt;</span><br>
+                              <div class="pagination"><span class="tagname">body {<span class="tagattribute">background-color: <span class="tagcolor">powderblue</span>;</span>}</span></div>
+                              <div class="pagination"><span class="tagname">h1 {<span class="tagattribute">color: <span class="tagcolor">red</span>;</span>}</span></div>
+                              <div class="pagination"><span class="tagname">p {<span class="tagattribute">color: <span class="tagcolor">blue</span>;</span>}</span></div>
+                              <span class="tagcolor">&lt;</span><span style="color: brown;">/style</span><span class="tagcolor">&gt;</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="class">
+                        <h3 style="font-size: 23px; text-decoration: underline">The HTML charset Attibute</h3>
+                        <p>The character set (charset) is an attribute specified in the <span class="tagname"><span class="tagname tagname_bg">&lt;meta&gt;</span></span> </p>
+                        <div class="solux-example">
+                            <div class="solux-code">
+                                <span class="tagcolor">&lt;</span><span class="tagname">meta <span class="tagattribute">charset <span class="tagcolor">= "UTF-8"</span></span></span><span class="tagcolor">&gt;</span>
+                            </div>
+                        </div>
+                        <p>The HTML5 specification encourages web developers to use the <strong>UTF-8</strong> character set since UTF-8 covers almost all of the characters and symbols in the world!</p>
+                    </div>
+                    <div class="class">
+                        <h3 style="font-size: 23px; text-decoration: underline">The HTML Elements and HTML Attributes</h3>
+                        <p>An HTML element is defined by a start tag, some content, and an end tag as seen on <a href="">Introduction to Basic HTML Tags in Previous Topic</a></p>
+                        <p>The HTML <strong>element</strong> is everything from the start to the end of a tag</p>
+                        <span class="tagname_bg"><span class="tagcolor">&lt;</span><span class="tagname">tagname</span><span class="tagcolor">&gt;</span>content_of_tag...<span class="tagcolor">&lt;</span><span class="tagname">/tagname</span><span class="tagcolor">&gt;</span></span>
+                        <p>Examples of some HTML elements:</p>
+                        <div class="pagination"><span class="tagname_bg"><span class="tagcolor">&lt;</span><span class="tagname">h1</span><span class="tagcolor">&gt;</span>My First Heading...<span class="tagcolor">&lt;</span><span class="tagname">/h1</span><span class="tagcolor">&gt;</span></span><br></div>
+                        <div class="pagination"><span class="tagname_bg"><span class="tagcolor">&lt;</span><span class="tagname">p</span><span class="tagcolor">&gt;</span>My First Paragraph...<span class="tagcolor">&lt;</span><span class="tagname">/p</span><span class="tagcolor">&gt;</span></span><br></div>
+                        <br>
+                        <p>Demystifying the HTML elements we see according to the example that:</p>
+                        <div class="solux-example">
+                            <div class="table-container notranslate">
+                                <table>
+                                    <tr>
+                                      <th class="text">Start Tag</th>
+                                      <th class="text">Content</th>
+                                      <th class="text">End Tag</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="text_lil"><span>&lt;h1&gt;</span></td>
+                                      <td class="text_lil">My First Heading...</td>
+                                      <td class="text_lil">&lt;/h1&gt;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil"><span>&lt;p&gt;</span></td>
+                                        <td class="text_lil">My First Paragraph...</td>
+                                        <td class="text_lil">&lt;/p&gt;</td>
+                                      </tr>
+                                    
+                                  </table>
+                            </div>
+                        </div>
+                        <p><strong>Some HTML element have no content like &lt;br&gt;. These elements are called empty elements and they have no end tag!</strong> <a href="" id="viewAllLink" onclick="toggleTable()">View All</a></p>
+                        <div id="tableContainer" class="hidden">
+                            <div class="solux-example">
+                                <table>
+                                    <tr>
+                                        <th class="text">tag name</th>
+                                        <th class="text">Function</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;area&gt;</td>
+                                        <td class="text_lil">Defines an area inside an image map</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;base&gt;</td>
+                                        <td class="text_lil">Specifies the base URL and target for all relative URLs in a document.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;br&gt;</td>
+                                        <td class="text_lil">Represents a line break or a forced line break within a paragraph.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;col&gt;</td>
+                                        <td class="text_lil">Specifies attributes for table columns that apply to every column within the column group it belongs to.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;command&gt;</td>
+                                        <td class="text_lil">Defines a command button that the user can invoke.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;colgroup&gt;</td>
+                                        <td class="text_lil">Specifies a group of one or more columns in a table for formatting purposes.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;embed&gt;</td>
+                                        <td class="text_lil">Embeds external content or plugin applications within an HTML document.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;hr&gt;</td>
+                                        <td class="text_lil">Represents a thematic break or horizontal rule within an HTML document.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;img&gt;</td>
+                                        <td class="text_lil">Used to embed an image into an HTML document.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;input&gt;</td>
+                                        <td class="text_lil">Creates an input field within a form</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;keygen&gt;</td>
+                                        <td class="text_lil">Generates a key-pair that can be used by form submission.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;link&gt;</td>
+                                        <td class="text_lil">Defines a link between an HTML document and an external resource.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;meta&gt;</td>
+                                        <td class="text_lil"> Specifies metadata about an HTML document.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;param&gt;</td>
+                                        <td class="text_lil">Provides parameters for embedded content within an HTML document.</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;source&gt;</td>
+                                        <td class="text_lil"> Specifies multiple media resources for media elements like &lt;video&gt; or &lt;audio&gt;</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;track&gt;</td>
+                                        <td class="text_lil"> Specifies timed text track for media elements like &lt;video&gt; or &lt;audio&gt;</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text_lil">&lt;wbr&gt;</td>
+                                        <td class="text_lil">Represents a word break opportunity within the text</td>
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p>On the other hand an <strong>Attribute</strong> is an additional information about HTML elements.</p>
+                        <p>All HTML elements can have attributes and are always specified in the <strong>start tag</strong>.</p>
+                        <p>Attributes usually come in name/value pairs like: <strong>name="value"</strong></p>
+                        <p>Below we will see some important attributes commonly used:</p>
+                        <h4>The href Attribute</h4>
+                        <p>The <span class="tagname_bg"><span class="tagname">&lt;a&gt;</span></span> tag defines an hyperlink. The <span class="tagname_bg"><span class="tagname">href</span></span> attribute specifies the URL of the page the link goes to:</p>
+                        <p>The Syntax is as follows:</p>
+                        <div class="solux-example">
+                            <h3>Syntax</h3>
+                            <div class="solux-code">
+                                <span class="tagcolor">&lt;</span><span class="tagname">a</span><span class="tagattribute"> href <span class="tagcolor">="url"</span></span><span class="tagcolor">&gt;</span>link text<span class="tagcolor">&lt;</span><span class="tagname">/a</span><span class="tagcolor">&gt;</span>
+                            </div>
+                        </div>
+                        <p>The most important attribute of the <strong>&lt;a&gt;</strong> element is the <strong>href</strong> attribute, which indicates the link's destination</p>
+                        <p>By default, the value of the href is an empty string <strong>""</strong> and therefore it will not redirect to any link</p>
+                        <p>On clicking on the link text, It will redirect you to the specified url address or html page</p> 
+                        <div class="solux-example">
+                            <h3>Example: Redirecting to URL</h3><br>
+                            <h6>This example shows you how to link to Novus Technologies Website</h6>
+                            <div class="solux-code">
+                                <span class="tagcolor">&lt;</span><span class="tagname">a</span><span class="tagattribute"> href <span class="tagcolor">="novus-tech237.github.io/Novus-Main"</span></span><span class="tagcolor">&gt;</span>Visit Novus Technologies Website<span class="tagcolor">&lt;</span><span class="tagname">/a</span><span class="tagcolor">&gt;</span>
+                            </div>
+                        </div>
+                        <p>Suppose you have created an html sample page and you want to link to it;</p>
+                        <div class="solux-example">
+                            <h3>Example: Redirecting to Sample HTML Page</h3><br>
+                            <h6>This example shows you how to link to your sample HTML page</h6>
+                            <div class="solux-code">
+                                <span class="tagcolor">&lt;</span><span class="tagname">a</span><span class="tagattribute"> href <span class="tagcolor">="sample_page.html"</span></span><span class="tagcolor">&gt;</span>Visit My Sample Page<span class="tagcolor">&lt;</span><span class="tagname">/a</span><span class="tagcolor">&gt;</span>
+                            </div>
+                        </div>
+                        <p><strong>NB: Links can be styled to get another look</strong>. By default, Unvisited link is underlined blue, Visited link is underlined purple and Active link is underlined red</p>
+                        <h4>The target Attribute</h4>
+                        <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+                        <p>The <span class="tagname tagname_bg">target</span> attribute specifies <strong>where</strong> to open the linked document and it has the following values</p>
+                        <ul>
+                            <li><span class="tagname">_self</span>: Default. Opens the document in the same window/tab as it was clicked</li>
+                            <li><span class="tagname">_blank</span>: Opens the document on a new window/tab</li>
+                            <li><span class="tagname">_parent</span>: Opens the document in theh parent frame</li>
+                            <li><span class="tagname">_top</span>: Opens the document in the full body of the window</li>
+                        </ul>
+                        <div class="solux-example">
+                            <h3>Example</h3><br>
+                            <h6>This Example shows how you open Novus Technologies Website in another tab</h6>
+                            <div class="solux-code">
+                                <span class="tagcolor">&lt;</span><span class="tagname">a</span><span class="tagattribute"> href <span class="tagcolor">="novus-tech237.github.io/Novus-Main"</span></span><span class="tagcolor">&gt;</span>Visit Novus Technologies Website<span class="tagcolor">&lt;</span><span class="tagname">/a</span><span class="tagcolor">&gt;</span>
+                            </div>
+                        </div>
+                        <h4>The title Attribute</h4>
+                        <p>The <span class="tagname tagname_bg">title</span> specifies extra information about an element. The information is most often shown as a tooltip text when the mouse cursor is over the element.</p>
+                        <div class="solux-example">
+                            <h3>Example</h3><br>
+                            <h6>This Example shows how you open Novus Technologies Website in another tab</h6>
+                            <div class="solux-code">
+                                <span class="tagcolor">&lt;</span><span class="tagname">a</span><span class="tagattribute"> href <span class="tagcolor">="novus-tech237.github.io/Novus-Main"</span><span class="tagattribute"> title <span class="tagcolor">="Go to Novus website"</span></span></span><span class="tagcolor">&gt;</span>Visit Novus Technologies Website<span class="tagcolor">&lt;</span><span class="tagname">/a</span><span class="tagcolor">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                <a href="" class="btn btn-primary" style="margin-bottom:2rem;">Mark as Done</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="static/js/hidden.js"></script>
+</html>

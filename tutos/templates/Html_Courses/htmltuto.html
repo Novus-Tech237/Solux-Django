@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%include 'title'%}
     {%include 'stylesheet_imports.html'%}
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 
 </head>
 <body>
@@ -13,7 +19,6 @@
         <div class="hero_bar">
             {%include 'html_header.html'%}
         </div>
-        
         <section class="course_content">
         
                 {%include 'html_nav.html'%}
@@ -24,5 +29,5 @@
     </div>
     {%include 'footer'%}
 </body>
-{%include 'javascripts.html'%}
+
 </html>  
