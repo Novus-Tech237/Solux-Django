@@ -1,0 +1,8 @@
+#Html Frontend explanation
+
+You are required to do the following:
+    - Desinging the content of each class only
+    - Finishing each chapter in html files
+    - Naming the files will be of format (coursename_course_Number.html) 
+      example: python_course_One.html : is an html file representing the first chatper of python course
+Do not modify the given CSS file in any way
