@@ -130,7 +130,17 @@ USE_L10N = True
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR/'static']
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'assets'),
+    os.path.join(BASE_DIR, 'assets/vendors/bootstrap'),
+    os.path.join(BASE_DIR, 'assets/vendors/fontawesome'),
+    os.path.join(BASE_DIR, 'assets/vendors/bicon'),
+    os.path.join(BASE_DIR, 'assets/vendors/woocommerce'),    
+    os.path.join(BASE_DIR, 'assets/vendors/owl/assets'),
+    os.path.join(BASE_DIR, 'assets/vendors/themify'),
+    os.path.join(BASE_DIR, 'assets/vendors/animate-css'),
+    ]
 
 # MEDIA_URL = 'image/'
 # MEDIA_ROOT = BASE_DIR/'media'

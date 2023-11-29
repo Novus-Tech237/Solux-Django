@@ -1,0 +1,89 @@
+{%load static%}
+<div class="course">
+    <div class="title">
+        <i class="uil uil-html5-alt" style="background-color: purple;"></i>
+        <h2>Html List and Tables</h2>
+    </div>
+    <div class="class">
+        <h3 style="font-size: 23px; text-decoration: underline">Html List</h3>
+        <p>To list out a number of items, The Html list offers you the opportunity to do that.</p>
+        <p>The Html list provides 3 types of list which are:</p>
+        <ul>
+            <li><span class="tagname">&lt;ul&gt;: </span>Unordered List, They are used to create bullet-pointed lists. Each list item is wrapped in &lt;li&gt; tags</li>
+            <li><span class="tagname">&lt;ol&gt;: </span>Ordered List, They are used to create numbered lists. Each tem is also wrapped in &lt;li&gt; tags</li>
+            <li><span class="tagname">&lt;dl&gt;: </span>Definition List, They consist of terms and their corresponding definitions. Each term is wrapped in &lt;dt&gt; tags, and each definition is wrapped in &lt;dd&gt; tags</li>
+        </ul>
+        <div class="solux-example">
+            <h4>Example: Using &lt;ul&gt;</h4>
+            <div class="solux-code">
+                <span class="tagcolor">&lt;<span class="tagname">ul</span>&gt;</span><br>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">li</span>&gt;</span>Item One<span class="tagcolor">&lt;<span class="tagname">/li</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">li</span>&gt;</span>Item Two<span class="tagcolor">&lt;<span class="tagname">/li</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">li</span>&gt;</span>Item Three<span class="tagcolor">&lt;<span class="tagname">/li</span>&gt;</span></div>
+                <span class="tagcolor">&lt;<span class="tagname">/ul</span>&gt;</span><br>
+            </div>
+        </div>
+        <div class="solux-example">
+            <h4>Example: Using &lt;ol&gt;</h4>
+            <div class="solux-code">
+                <span class="tagcolor">&lt;<span class="tagname">ol</span>&gt;</span><br>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">li</span>&gt;</span>Item One<span class="tagcolor">&lt;<span class="tagname">/li</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">li</span>&gt;</span>Item Two<span class="tagcolor">&lt;<span class="tagname">/li</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">li</span>&gt;</span>Item Three<span class="tagcolor">&lt;<span class="tagname">/li</span>&gt;</span></div>
+                <span class="tagcolor">&lt;<span class="tagname">/ol</span>&gt;</span><br>
+            </div>
+        </div>
+        <div class="solux-example">
+            <h4>Example: Using &lt;dl&gt;</h4>
+            <div class="solux-code">
+                <span class="tagcolor">&lt;<span class="tagname">dl</span>&gt;</span><br>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">dt</span>&gt;</span>HTML<span class="tagcolor">&lt;<span class="tagname">/dt</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">dd</span>&gt;</span>The standard markup language for creating web pages.<span class="tagcolor">&lt;<span class="tagname">/dd</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">dt</span>&gt;</span>CSS<span class="tagcolor">&lt;<span class="tagname">/dt</span>&gt;</span></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">dd</span>&gt;</span>A stylesheet language used for describing the presentation of a document written in HTML.<span class="tagcolor">&lt;<span class="tagname">/dd</span>&gt;</span></div>
+                <span class="tagcolor">&lt;<span class="tagname">/dl</span>&gt;</span><br>
+            </div>
+        </div>
+        <p>Lists can be nested inside one another, allowing for hierarchial organization of content.</p>
+        <p>You can use CSS to customize the appearance of the list such as changing the bullet style or numbering format.</p>
+    </div>
+    <div class="class">
+        <h3 style="font-size: 23px; text-decoration: underline">Html Tables</h3>
+        <p>Tables in html are created by using the <strong class="tagname tagname_bg">&lt;table&gt;</strong> element</p>
+        <p>Tables consists of table rows <span class="tagname tagname_bg">&lt;tr&gt;</span> ,table data <span class="tagname tagname_bg">&lt;td&gt;</span> and table headers <span class="tagname tagname_bg">&lt;th&gt;</span></p>
+        <p>The <span class="tagname tagname_bg">&lt;thead&gt;</span>, <span class="tagname tagname_bg">&lt;tbody&gt;</span> and <span class="tagname tagname_bg">&lt;tfoot&gt;</span> are used to groupt table headers, table body content and table footes respectively.</p>
+        <p>The structure of a table is defined by placing the appropriate content table elements. That is all the elements found on the table head should be in thead tag, the table main content should be in the tbody tag and the conclusion content should be found in the tfoot</p>
+        <div class="solux-example">
+            <h4>Example</h4>
+            <div class="solux-code">
+                <span class="tagcolor">&lt;<span class="tagname">table</span>&gt;</span><br>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">thead</span>&gt;</span><br></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">th</span>&gt;</span>Product<span class="tagcolor">&lt;<span class="tagname">/th</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">th</span>&gt;</span>Price<span class="tagcolor">&lt;<span class="tagname">/th</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/thead</span>&gt;</span><br></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">tbody</span>&gt;</span><br></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">td</span>&gt;</span>Apple<span class="tagcolor">&lt;<span class="tagname">/td</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">td</span>&gt;</span>500,0 XAF<span class="tagcolor">&lt;<span class="tagname">/td</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">td</span>&gt;</span>Orange<span class="tagcolor">&lt;<span class="tagname">/td</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">td</span>&gt;</span>200,0 XAF<span class="tagcolor">&lt;<span class="tagname">/td</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/tbody</span>&gt;</span><br></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">tfoot</span>&gt;</span><br></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">td</span>&gt;</span>Total Price<span class="tagcolor">&lt;<span class="tagname">/td</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">td</span>&gt;</span>700,0 XAF<span class="tagcolor">&lt;<span class="tagname">/td</span>&gt;</span><br></div></div></div>
+                <div class="pagination"><div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/tr</span>&gt;</span><br></div></div>
+                <div class="pagination"><span class="tagcolor">&lt;<span class="tagname">/tfoot</span>&gt;</span><br></div>
+                <span class="tagcolor">&lt;<span class="tagname">/table</span>&gt;</span><br>
+                
+            </div>
+        </div>
+        <p>Remarks that on this basic code won't provide borders unless CSS is been used on the table</p>
+        <p><strong>Note:</strong> It is important to use proper semantics and structure for both lists and tables. It enhances accessibility and allows assistive technologies to interpret the content correctly</p>
+    </div>
+</div>

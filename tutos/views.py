@@ -6,7 +6,59 @@ from django.template.loader import render_to_string
 class IndexView(LoginRequiredMixin, View):
     template_name = "tuto.html"
     def get(self, request):
+        pages = ['page1', 'page2', 'page3']
+        context = {'pages': pages}
+        return render(request, self.template_name, context)
+class ChildTemplateView(LoginRequiredMixin, View):
+    template_one = "courseone.html"
+    template_two = "coursetwo.html"
+    template_three = "coursethree.html"
+    def get(self, request, page):
+        if page == 'page1':
+            return render(request, self.template_one)
+        elif page == 'page2':
+            return render(request, self.template_two)
+        elif page == 'page3':
+            return render(request, self.template_three)
+        else:
+            return render(request, self.template_one)
+class HtmlIntroductionView(LoginRequiredMixin, View):
+    template_name = "htmlIntroduction.html"
+    def get(self, request):
         return render(request, self.template_name)
+class HtmlStructureView(LoginRequiredMixin, View):
+    template_name = "htmlDescription.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlTextFormatingView(LoginRequiredMixin, View):
+    template_name = "htmlTextFormating.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlMediaView(LoginRequiredMixin, View):
+    template_name = "htmlMedia.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlListandTableView(LoginRequiredMixin, View):
+    template_name = "htmlListandTables.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlFormsandDivsView(LoginRequiredMixin, View):
+    template_name = "htmlFormsandDivs.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlAdvanceView(LoginRequiredMixin, View):
+    template_name = "htmlAdvanced.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class VSCodeIntroductionView(LoginRequiredMixin, View):
+    template_name = "vscodeIntroduction.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class VSCodeExtensionView(LoginRequiredMixin, View):
+    template_name = "vscodeExtension.html"
+    def get(self, request):
+        return render(request, self.template_name)
+# Create your views here.
 # class MarkAsDoneView_HTML(View):
 #     def get(self, request, course_id):
 #         session = request.session
@@ -22,25 +74,3 @@ class IndexView(LoginRequiredMixin, View):
 #         session['progress'] = progress_by_course
 #         next_chapter = progress
 #         next_section = 
-
-class HtmlIntroductionView(LoginRequiredMixin, View):
-    template_name = "htmlIntroduction.html"
-    def get(self, request):
-        return render(request, self.template_name)
-class HtmlStructureView(LoginRequiredMixin, View):
-    template_name = "htmlDescription.html"
-    def get(self, request):
-        return render(request, self.template_name)
-class HtmlTextFormatingView(LoginRequiredMixin, View):
-    template_name = "htmlTextFormating.html"
-    def get(self, request):
-        return render(request, self.template_name)
-class VSCodeIntroductionView(LoginRequiredMixin, View):
-    template_name = "vscodeIntroduction.html"
-    def get(self, request):
-        return render(request, self.template_name)
-class VSCodeExtensionView(LoginRequiredMixin, View):
-    template_name = "vscodeExtension.html"
-    def get(self, request):
-        return render(request, self.template_name)
-# Create your views here.
