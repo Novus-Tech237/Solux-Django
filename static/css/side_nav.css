@@ -172,3 +172,167 @@ th {
 .hidden{
   display: none;
 }
+
+/* ================
+Features
+================*/
+.feature {
+  margin-top: -50px;
+}
+
+.feature-item {
+  padding: 30px 35px;
+  margin-bottom: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.04);
+  margin: 0px 5px;
+  border-radius: 5px;
+  border-top: 5px solid #E93F1A;
+  display: flex;
+  transition: .4s;
+  margin-bottom: 20px;
+}
+
+.feature-item h4 {
+  margin-bottom: 20px;
+  transition: .4s;
+}
+
+.feature-item:hover {
+  margin-top: -10px;
+}
+
+.feature-item:hover .feature-icon {
+  color: #E93F1A;
+}
+
+.feature-icon {
+  font-size: 40px;
+  float: left;
+  margin-right: 25px;
+  color: #385777;
+  margin-top: 5px;
+  transition: .4s ease;
+}
+
+.feature-text {
+  overflow: hidden;
+}
+/* ====================
+Footer Section
+======================*/
+.footer {
+  background: #100f1f;
+  padding: 80px 0px 0px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .footer-widget .widget-title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.footer .footer-widget p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .footer-contact ul {
+  margin-top: 30px;
+}
+
+.footer .footer-contact ul li {
+  margin-bottom: 20px;
+}
+
+.footer .footer-contact ul li i {
+  color: #E93F1A;
+  margin-right: 20px;
+  float: left;
+  margin-top: 7px;
+  min-width: 30px;
+}
+
+.footer .footer-contact ul li div {
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.footer .footer-contact ul li div strong {
+  display: block;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.footer .footer-links li {
+  padding: 5px 0px;
+}
+
+.footer .footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .footer-links a:hover {
+  color: #E93F1A;
+}
+
+.footer .footer-socials {
+  margin-top: 30px;
+}
+
+.footer .footer-socials a {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 14px;
+  color: #222;
+  border-radius: 100%;
+}
+
+.footer .footer-socials a:hover {
+  background: #E93F1A;
+  color: #fff;
+}
+
+.footer-btm {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px 0px 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-btm img{
+  width: 8rem;
+}
+
+.footer-btm .copyright p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0px;
+}
+
+.form-subscribe {
+  position: relative;
+}
+
+.form-subscribe .form-control {
+  height: 50px;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border-radius: 5px;
+}
+
+.form-subscribe button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #E93F1A;
+}
+
+.form-subscribe button:hover {
+  background: #fff;
+  color: #222;
+}

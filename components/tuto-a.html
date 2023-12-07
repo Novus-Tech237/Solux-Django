@@ -7,24 +7,7 @@
 </head>
 <body class="sub_page">
     <section class="section-padding course">
-        <div class="course-top-wrap">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h1>Our Popular Courses</h1>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="topbar-search">
-                            <form method="get" action="#">
-                                <input type="text"  placeholder="Search our courses" class="form-control">
-                                <label><i class="fa fa-search"></i></label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+        {%include 'tuto_searchbar.html'%}
     
         <div class="container">
             <div class="row">
@@ -87,7 +70,7 @@
                                     <span class="course-duration"><i class="bi bi-badge3"></i>82 Lessons</span>
                                 </div> 
                                
-                                <div class="buy-btn"><a href="#" class="btn btn-main-2 btn-small">Details</a></div>
+                                <div class="buy-btn"><a href="{%url 'tutos:html_detail'%}" class="btn btn-main-2 btn-small">Details</a></div>
                             </div>
                         </div>
                     </div>
@@ -221,18 +204,27 @@
                                 <div class="buy-btn"><a href="#" class="btn btn-main-2 btn-small">Details</a></div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
-    
+            {% for course in courses %}
+            <div>
+                <img src="{{ course.image.url }}" alt="{{ course.title }}">
+                <h2>{{ course.title }}</h2>
+                <p>{{ course.description }}</p>
+                <p>Lecturer: {{ course.lecturer }}</p>
+                <p>Price: ${{ course.price }}</p>
+            </div>
+        {% endfor %}
+        
     
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="blog-pagination text-center">
                         <ul>
-                          {% for page in pages %}
-                            <li class="page-num {%if page == 1 %} active {%endif%}"><a href="{% if page == 1 %}#{% else %}{% url 'child_template_url_name' page %}{% endif %}">{{ page }}</a></li>
-                          {%endfor%}
+                          <li class="page-num active" ><a href="{%url 'tutos:listone'%}">1</a></li>
+                          <li class="page-num"><a href="{%url 'tutos:listtwo'%}">2</a></li>
+                          <li class="page-num"><a href="{%url 'tutos:listthree'%}">3</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -241,4 +233,6 @@
     </section>
     
 </body>
+<script src="{%static 'js/whatsapp.js'%}"></script>
+
 </html>

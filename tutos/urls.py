@@ -5,7 +5,11 @@ from .views import *
 app_name = "tutos"
 urlpatterns = [
     path('', IndexView.as_view(), name="index"),
-    path("courses/page1", ChildTemplateView.as_view(), name="child_template"),
+    path("listone", ListOneView.as_view(), name="listone"),
+    path("listtwo", ListTwoView.as_view(), name="listtwo"),
+    path("listthree", ListThreeView.as_view(), name="listthree"),
+    
+    path("html/detail", HtmlDetailView.as_view(), name="html_detail"),
     path('vscode/introduction', VSCodeIntroductionView.as_view(), name="vscode_introduction"),
     path("vscode/extension", VSCodeExtensionView.as_view(), name="vscode_extension"),
     

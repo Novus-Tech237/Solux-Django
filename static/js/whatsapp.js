@@ -1,15 +1,24 @@
-var links = [
-    "https://wa.me/2348126325226",
-    "https://wa.me/237652033038",
-    "https://wa.me/237694191567"
-];
-
-document.querySelector(".year").textContent = new Date().getFullYear()
-
-document.getElementById("random-link").addEventListener("click",function(event){
-    event.preventDefault();
-    var randomIndex = Math.floor(Math.random()*links.length);
-    window.location.href = links[randomIndex];
-});
-
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the pagination list
+    var paginationList = document.querySelectorAll('.page-num');
+  
+    // Get the current URL
+    var currentUrl = window.location.href;
+  
+    // Define the URLs for each pagination item
+    var urlList = [
+      "{% url 'tutos:listone' %}",
+      "{% url 'tutos:listtwo' %}",
+      "{% url 'tutos:listthree' %}"
+    ];
+  
+    // Find the index of the current URL in the URL list
+    var activeIndex = urlList.findIndex(function(url) {
+      return currentUrl.includes(url);
+    });
+  
+    // Add 'active' class to the pagination item with the current URL
+    if (activeIndex > -1) {
+      paginationList[activeIndex].classList.add('active');
+    }
+  });

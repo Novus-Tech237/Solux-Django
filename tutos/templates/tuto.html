@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%include 'title'%}
     {%include 'tuto_stylesheet.html'%}
+    
     <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    <link href="{%static 'css/side_nav.css'%}" rel="stylesheet">
+
 </head>
 <body>
     <div class="hero_area">
@@ -16,7 +19,6 @@
     {% block content %}
      {%include "tuto-a.html"%}
     {% endblock %}
-     {%include "footer"%}
+    {%include "footer"%}
 </body>
-{%include 'javascripts.html'%}
 </html>

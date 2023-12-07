@@ -11,4 +11,3 @@ function toggleTable() {
         viewAllLink.textContent = 'View All';
     }
 }
-  

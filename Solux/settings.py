@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'shop',
     'alert',
     'tutos',
+    'cart_checkout'
 ]
 
 MIDDLEWARE = [
@@ -62,6 +63,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
                 os.path.join(BASE_DIR, 'templates'),
+                os.path.join(BASE_DIR, 'tutos/components'),
                 os.path.join(BASE_DIR, 'tutos/templates/Html_Courses'),
                 os.path.join(BASE_DIR, 'tutos/templates/VScode_Courses'),
                 os.path.join(BASE_DIR, 'components'),
@@ -141,9 +143,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'assets/vendors/themify'),
     os.path.join(BASE_DIR, 'assets/vendors/animate-css'),
     ]
-
-# MEDIA_URL = 'image/'
-# MEDIA_ROOT = BASE_DIR/'media'
+MEDIA_URL =  '/course_media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

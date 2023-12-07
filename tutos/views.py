@@ -9,19 +9,22 @@ class IndexView(LoginRequiredMixin, View):
         pages = ['page1', 'page2', 'page3']
         context = {'pages': pages}
         return render(request, self.template_name, context)
-class ChildTemplateView(LoginRequiredMixin, View):
-    template_one = "courseone.html"
-    template_two = "coursetwo.html"
-    template_three = "coursethree.html"
-    def get(self, request, page):
-        if page == 'page1':
-            return render(request, self.template_one)
-        elif page == 'page2':
-            return render(request, self.template_two)
-        elif page == 'page3':
-            return render(request, self.template_three)
-        else:
-            return render(request, self.template_one)
+class ListOneView(LoginRequiredMixin, View):
+    template_name = "courseone.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class ListTwoView(LoginRequiredMixin, View):
+    template_name = "coursetwo.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class ListThreeView(LoginRequiredMixin, View):
+    template_name = "coursethree.html"
+    def get(self, request):
+        return render(request, self.template_name)
+class HtmlDetailView(LoginRequiredMixin, View):
+    template_name = "htmlDetail.html"
+    def get(self, request):
+        return render(request, self.template_name)
 class HtmlIntroductionView(LoginRequiredMixin, View):
     template_name = "htmlIntroduction.html"
     def get(self, request):
