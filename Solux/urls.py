@@ -22,5 +22,6 @@ urlpatterns = [
     path('',include('shop.urls')),
     path('/', include('user_auth.urls')),
     path('alert/', include('alert.urls')),
-    path('tuto/', include('tutos.urls'))
+    path('tuto/', include('tutos.urls')),
+    path('cart_checkout/', include('cart_checkout.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

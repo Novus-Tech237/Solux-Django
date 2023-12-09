@@ -87,7 +87,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.table-container {
+/* .table-container {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -106,7 +106,7 @@ th, td {
 
 th {
     background-color: #f5f5f5;
-}
+} */
 .solux-code{
     border-left: 4px solid purple;
     width: auto;

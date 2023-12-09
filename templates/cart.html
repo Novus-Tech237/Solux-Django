@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%include 'title'%}
     {%include 'tuto_stylesheet.html'%}
-    <link href="{%static 'css/style.css'%}" rel="stylesheet">
+    
     <link href="{%static 'css/side_nav.css'%}" rel="stylesheet">
-    <link href="{%static 'css/responsive.css'%}" rel="stylesheet">
+
 </head>
 <body>
     <div class="hero_area">
         {% include "navigation.html" %}
-        {% include "user_tuto.html"%}
+        {% include "user_cart.html"%}
     </div>
     {% block content %}
-     {%include "tuto-a.html"%}
+     {%include "cart-w.html"%}
     {% endblock %}
     {%include "footer"%}
 </body>
-{%include 'javascripts.html'%}
 </html>
